@@ -244,7 +244,8 @@
   background-size: 12px 14px;
   background-repeat: no-repeat;
   background-position: right center;
-  padding-right: 22px;
+  padding-right: 24px;
+  margin-right: 8px;
   padding-bottom: 4px;
   line-height: 1.2;
   display: inline; }
