@@ -1,0 +1,140 @@
+---
+layout: prototype
+search: false
+primary-nav: false
+secondary-nav: false
+language-switch: false
+---
+
+<style>
+@media screen and (min-width: 768px) {
+  .sticky {
+    padding-top:4px;
+    position: sticky;
+    top: 0;
+  }
+}
+</style>
+
+<main id="main" role="main" tabindex="-1" class="prototype">
+  <div class="background--gallery padding-top--2">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+
+          <nav>
+            <div class="breadcrumb">
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="https://www.ons.gov.uk/">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="../../geography-2">Geography</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="../local-authorities">Local authorities</a>
+                </li>
+              </ol>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="background--gallery">
+    <div class="wrapper">
+      <div class="col-wrap">
+        <div class="col">
+          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--1">{{page.english-name}}</h1>
+          <p>{{page.code}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="padding-top--3 padding-bottom--6">
+    <div class="wrapper">
+      <div class="col-wrap">
+
+        <div class="col col--md-one-third col--lg-one-quarter sticky">
+          <div class="">
+            <h2 class="heading-medium">Page contents</h2>
+            <ul class="section-contents">
+              {% if page.map != yes %}
+              <li>
+                <a href="#map">Map</a>
+              </li>
+              {% endif %}
+              <li>
+                <a href="#datasets">Datasets</a>
+              </li>
+              <li>
+                <a href="#downloads">Downloads</a>
+              </li>
+              <li>
+                <a href="#attributes">Attributes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col col--md-two-thirds col--lg-three-quarters">
+
+          {% if page.map != yes %}
+          <h2 id="map">Map</h2>
+
+          <div class="map width-md--25 background--white margin-bottom--3">
+            {% include geography/{{page.code}}.svg %}
+          </div>
+          {% endif %}
+
+          <h2 id="datasets">5 datasets</h2>
+
+          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Annual summary of hours worked, place of work by Local Authority</a></p>
+          </div>
+
+          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Annual summary of hours worked, place of residence by Local Authority</a></p>
+          </div>
+
+          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Annual summary of earnings, place of residence by Local Authority</a></p>
+          </div>
+
+          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Annual summary of earnings, place of work by Local Authority</a></p>
+          </div>
+
+          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
+            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Population Estimates for UK, England and Wales, Scotland and Northern Ireland</a></p>
+          </div>
+
+          <h2 id="downloads">Downloads</h2>
+          <ul>
+            <li><a href="http://statistics.data.gov.uk/boundaries/{{page.code}}.json">Boundary data</a> <span class="font-xxsmall">GEOJSON, 23KB</span></li>
+          </ul>
+
+          <h2 id="attributes">Attributes</h2>
+          <dl class="attribute-list">
+            <dt>Code:</dt>
+            <dd>{{page.code}}</dd><br />
+            <dt>FID:</dt>
+            <dd>{{page.FID}}</dd><br />
+            <dt>Release date:</dt>
+            <dd>December 2017</dd>
+            <!-- <dt>License:</dt>
+            <dd>Open Government Licence v3.0</dd> -->
+          </dl>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>

@@ -27,3 +27,28 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+
+
+# Build page for geo prototype
+# https://github.com/avillafiorita/jekyll-datapage_gen
+page_gen-dirs: true # uncomment, if you prefer to generate named folders
+
+page_gen:
+  - index_files: false
+    data: 'areas'
+    template: 'area'
+    name: 'code'
+    dir: 'sprint/25/geography-2/local-authorities'
+
+  - index_files: false
+    data: 'countries'
+    template: 'area'
+    name: 'code'
+    dir: 'sprint/25/geography-2/countries'
+
+  - index_files: false
+    data: 'regions'
+    template: 'area'
+    name: 'code'
+    dir: 'sprint/25/geography-2/regions'

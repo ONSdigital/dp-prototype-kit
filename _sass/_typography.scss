@@ -35,7 +35,7 @@ h6 {
 }
 
 // Base font size
-address,li,p,.btn, summary {
+address,li,p,.btn, summary, dl {
   font-size: 16px;
   margin-bottom: $spacing-unit*4;
   @media (min-width: 768px) {
@@ -44,7 +44,7 @@ address,li,p,.btn, summary {
 }
 
 // Lists
-ul,ol {
+ul,ol,dl {
   margin-bottom: $spacing-unit*4;
   padding-left: $spacing-unit*2;
 }
@@ -52,6 +52,25 @@ li {
   margin: 0;
   padding: 0;
   padding-bottom: $spacing-unit;
+}
+
+// Definition list
+/**
+ * Flexible multiline definition lists with 2 lines of CSS
+ */
+
+ dl {
+   padding-left: 0;
+  }
+
+dt, dd {
+  display: inline-block;
+  margin: 0;
+}
+
+dd:after {
+	content: '\A';
+	white-space: pre;
 }
 
 // Font weights
