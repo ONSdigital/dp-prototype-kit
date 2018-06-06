@@ -31,9 +31,9 @@ language-switch: false
                 <li class="breadcrumb__item">
                   <a class="breadcrumb__link" href="../../geography-2">Geography</a>
                 </li>
-                <li class="breadcrumb__item">
+                <!-- <li class="breadcrumb__item">
                   <a class="breadcrumb__link" href="../local-authorities">Local authorities</a>
-                </li>
+                </li> -->
               </ol>
             </div>
           </nav>
@@ -92,27 +92,19 @@ language-switch: false
           </div>
           {% endif %}
 
-          <h2 id="datasets">5 datasets</h2>
+          <h2 id="datasets">2 datasets</h2>
 
           <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
-            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Annual summary of hours worked, place of work by Local Authority</a></p>
+            <h3 class="heading-small margin-bottom--1 padding-top--0"><a href="{% if page.code == "E08000001" %}https://beta.ons.gov.uk/filter-outputs/7c117c4f-31e6-4d03-9736-9e5fb4e8d8f7{% else %}https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1{% endif %}">Annual summary of hours worked, place of work by Local Authority</a></h3>
+            <p class="margin-bottom--1">Estimates of paid hours worked for UK employees by gender and full/part-time working by work based Region to Local Authority level.</p>
           </div>
 
           <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
-            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Annual summary of hours worked, place of residence by Local Authority</a></p>
+            <h3 class="heading-small margin-bottom--1 padding-top--0"><a href="{% if page.code == "E08000001" %}https://beta.ons.gov.uk/filter-outputs/ddc1abb6-e95f-44e4-94f1-52f71b9eb771{% else %}https://beta.ons.gov.uk/datasets/mid-year-pop-est/editions/time-series/versions/2{% endif %}">Population Estimates for UK, England and Wales, Scotland and Northern Ireland</a></h3>
+            <p class="margin-bottom--1">Estimates of the usual resident population for the UK as at 30 June of the reference year. Provided by administrative area, single year of age and sex.</p>
           </div>
 
-          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
-            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Annual summary of earnings, place of residence by Local Authority</a></p>
-          </div>
 
-          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
-            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Annual summary of earnings, place of work by Local Authority</a></p>
-          </div>
-
-          <div class="background--gallery padding-top--2 padding-bottom--2 padding-right--1 padding-left--1 margin-bottom--2">
-            <p class="margin-bottom--0"><a href="https://beta.ons.gov.uk/datasets/ashe-table-7-hours/editions/time-series/versions/1">Population Estimates for UK, England and Wales, Scotland and Northern Ireland</a></p>
-          </div>
 
           <h2 id="downloads">Downloads</h2>
           <ul>
