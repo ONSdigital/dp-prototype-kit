@@ -13,13 +13,37 @@
   background-image: url(../assets/img/chevron-icon.svg);
   background-size: 12px 14px;
   background-repeat: no-repeat;
-  background-position: right center;
-  padding-right: 22px;
-  padding-bottom: 4px;
+  background-position: left 30%;
+  padding-top: 0;
+  padding-left: 1em;
   line-height: 1.2;
   display: inline;
 }
 
+@media (min-width: 768px) {
+  .breadcrumb__item {
+    background-position: left 20%;
+  }
+}
+
+.breadcrumb__item:first-child {
+  background:none;
+  padding-left: 0;
+}
+
+.breadcrumb__item:first-child::after {
+  content: "…";
+}
+
+.breadcrumb__item:nth-child(2) {
+  background:none;
+  padding-left: 0;
+}
+
 .breadcrumb__item::after {
   content: none;
+}
+
+.breadcrumb__item a:hover {
+  text-decoration: underline;
 }

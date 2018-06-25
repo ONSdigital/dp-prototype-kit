@@ -2,12 +2,24 @@
   border: 1px solid $iron;
 }
 
+.border--gallery {
+  border: 1px solid $gallery;
+}
+
 .border-left--matisse {
   border-left: 7px solid $matisse;
 }
 
 .border-bottom--iron {
   border-bottom: 1px solid $iron;
+}
+
+.border-bottom--gallery {
+  border-bottom: 1px solid $gallery;
+}
+
+.border-top--gallery {
+  border-top: 1px solid $gallery;
 }
 
 .border-top--iron {

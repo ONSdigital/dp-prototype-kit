@@ -1,0 +1,82 @@
+---
+layout: prototype
+search: false
+primary-nav: false
+secondary-nav: false
+language-switch: false
+footer: false
+---
+
+<style>
+li.breadcrumb__item, li.breadcrumb__item a  {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+
+  .attribute-list-item {
+    display: flex;
+    line-height: 1.4;
+  }
+
+  .attribute-list-item--name {
+    flex: 1;
+    max-width: 8em;
+  }
+
+  .attribute-list-item--description {
+    flex: 1;
+    align-self: flex-end;
+  }
+
+}
+
+</style>
+
+<main id="main" role="main" tabindex="-1" class="prototype">
+
+<div class="page-intro">
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+        <nav aria-label="breadcrumb" role="navigation">
+          <div class="breadcrumb print--hide">
+            <ol class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="https://www.ons.gov.uk/">Home</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Population Estimates for UK, England and Wales, Scotland and Northern Ireland</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Time series</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Filter options</a>
+              </li>
+              <li class="breadcrumb__item">
+                Preview
+              </li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="col-wrap">
+    <div class="col">
+      <ul class="list--neutral margin-top--5">
+        <li class="margin-top--0 margin-bottom--1 attribute-list-item font-size--16"><span class="attribute-list-item--name"><strong>Title:</strong></span> <span class="attribute-list-item--description">Population Estimates for UK, England and Wales, Scotland and Northern Ireland</span></li>
+        <li class="margin-top--0 margin-bottom--1 attribute-list-item font-size--16"><span class="attribute-list-item--name"><strong>Dataset ID:</strong></span> <span class="attribute-list-item--description">mid-year-pop-est</span></li>
+        <li class="margin-top--0 margin-bottom--1 attribute-list-item font-size--16"><span class="attribute-list-item--name"><strong>Release date:</strong></span> <span class="attribute-list-item--description">22 June 2017</span></li>
+        <li class="margin-top--0 margin-bottom--1 attribute-list-item font-size--16"><span class="attribute-list-item--name"><strong>Units:</strong></span> <span class="attribute-list-item--description">Number of people</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</main>
