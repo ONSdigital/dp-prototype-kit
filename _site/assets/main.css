@@ -213,11 +213,12 @@
   background-position: left 30%;
   padding-top: 0;
   padding-left: 1em;
+  padding-right: 0.5em;
   line-height: 1.2;
   display: inline; }
 @media (min-width: 768px) {
   .prototype .breadcrumb__item {
-    background-position: left 20%; } }
+    background-position: left 50%; } }
 .prototype .breadcrumb__item:first-child {
   background: none;
   padding-left: 0; }

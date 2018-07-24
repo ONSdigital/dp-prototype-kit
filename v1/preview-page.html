@@ -1,0 +1,227 @@
+---
+layout: prototype
+search: false
+primary-nav: false
+secondary-nav: false
+language-switch: false
+footer: false
+---
+
+<style>
+li.breadcrumb__item, li.breadcrumb__item a  {
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 0;
+}
+
+.prototype .breadcrumb__item {
+  display: none;
+}
+
+.prototype .breadcrumb__item:nth-last-child(2) {
+  display: inline;
+  background-image: url(../assets/img/chevron-icon-left.svg);
+}
+
+@media (min-width: 768px) {
+  .prototype .breadcrumb__item {
+    display: inline;
+  }
+  .prototype .breadcrumb__item:nth-last-child(2) {
+    background-image: url(../assets/img/chevron-icon.svg);
+  }
+}
+
+.prototype .attribute-list-item {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+
+  .attribute-list-item {
+    display: flex;
+    line-height: 1.4;
+  }
+
+  .attribute-list-item--name {
+    flex: 1;
+    max-width: 8em;
+  }
+
+  .attribute-list-item--description {
+    flex: 1;
+    align-self: flex-end;
+  }
+
+}
+
+</style>
+
+<main id="main" role="main" tabindex="-1" class="prototype">
+
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+
+        <nav aria-label="breadcrumb" role="navigation">
+          <div class="breadcrumb print--hide">
+            <ol class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="https://www.ons.gov.uk/">Home</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Population Estimates for UK, England and Wales, Scotland and Northern Ireland</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Time series</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Filter options</a>
+              </li>
+              <li class="breadcrumb__item">
+                Filtered dataset
+              </li>
+            </ol>
+          </div>
+        </nav>
+
+        <h1 class="page-intro__title margin-top--3 margin-bottom--2">
+          <!-- <span class="font-size--21 line-height--30 page-intro__type padding-top--0 padding-bottom--0">Population Estimates for UK, England and Wales, Scotland and Northern Ireland – N92000002: time-series</span> -->
+          <strong id="page-title">Filtered dataset</strong>
+        </h1>
+
+        <a href="#" class="font-size--16 hide--sm"><span class="icon icon-arrow-back--dark-small"></span>Adjust filter options</a>
+
+        <h2 class="margin-top--4">Preview</h2>
+
+        <ul class="list--neutral margin-top--5 margin-bottom--5">
+          <li class="margin-top--0 margin-bottom--1 attribute-list-item font-size--16"><span class="attribute-list-item--name"><strong>Title:</strong></span> <span class="attribute-list-item--description">Population Estimates for UK, England and Wales, Scotland and Northern Ireland</span></li>
+          <!-- <li class="margin-top--0 margin-bottom--1 attribute-list-item font-size--16"><span class="attribute-list-item--name"><strong>Dataset ID:</strong></span> <span class="attribute-list-item--description">mid-year-pop-est</span></li> -->
+          <li class="margin-top--0 margin-bottom--1 attribute-list-item font-size--16"><span class="attribute-list-item--name"><strong>Release date:</strong></span> <span class="attribute-list-item--description">22 June 2017</span></li>
+          <li class="margin-top--0 margin-bottom--1 attribute-list-item font-size--16"><span class="attribute-list-item--name"><strong>Units:</strong></span> <span class="attribute-list-item--description">Number of people</span></li>
+        </ul>
+
+        <div class="table-border padding-top--2 padding-left--1 padding-bottom--3">
+          <table>
+            <caption class="margin-top--0" style="border-bottom:none; font-weight:normal;">Preview of filtered dataset showing first 10 rows</caption>
+            <thead>
+              <tr>
+                <th scope="col">Values</th>
+                <th scope="col">Year</th>
+                <th scope="col">Geography</th>
+                <th scope="col">Age</th>
+                <th scope="col">Sex</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>25974</td>
+                <td>2016</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>4</td>
+                <td>All</td>
+              </tr>
+              <tr>
+                <td>25349</td>
+                <td>2014</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>4</td>
+                <td>All</td>
+              </tr>
+              <tr>
+                <td>25709</td>
+                <td>2015</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>4</td>
+                <td>All</td>
+              </tr>
+              <tr>
+                <td>25781</td>
+                <td>2016</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>5</td>
+                <td>All</td>
+              </tr>
+              <tr>
+                <td>25692</td>
+                <td>2014</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>5</td>
+                <td>All</td>
+              </tr>
+              <tr>
+                <td>25414</td>
+                <td>2015</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>5</td>
+                <td>All</td>
+              </tr>
+              <tr>
+                <td>25462</td>
+                <td>2016</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>6</td>
+                <td>All</td>
+              </tr>
+              <tr>
+                <td>25658</td>
+                <td>2014</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>6</td>
+                <td>All</td>
+              </tr>
+              <tr>
+                <td>25729</td>
+                <td>2015</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>6</td>
+                <td>All</td>
+              </tr>
+              <tr>
+                <td>25809</td>
+                <td>2016</td>
+                <td>Northern Ireland – N92000002</td>
+                <td>7</td>
+                <td>All</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col-wrap margin-top--4">
+      <div class="col col--md-half col--lg-half padding-right--2">
+
+        <h2 class="margin-top--4">Download</h2>
+
+        <div id="excel-file">
+          <a id="excel-download" class="btn btn--primary btn--thick margin-bottom--4 btn--focus font-size--19" href="#"><strong>Filtered dataset</strong> <span class="font-size--14">XLSX 8.2KB</span></a>
+        </div>
+
+        <div class="js-show-hide">
+          <div class="show-hide show-hide--light background--gallery margin-bottom--4">
+            <div class="js-show-hide__title ">
+              <button class="js-show-hide__button" type="button" aria-expanded="false" aria-controls="collapsible-0">
+                <p class="heading-small padding-left--1 margin-top--0 margin-bottom--0">
+                  Other download options
+                </p>
+              </button>
+            </div>
+            <div class="js-show-hide__content padding-left--1 padding-right--1 padding-top--4 border-top--iron" style="overflow: auto;" id="collapsible-0" aria-hidden="true">
+              <p class="font-size--16"><a class="font-size--16 font-weight--bold">Filtered dataset</a><br />CSV, 9KB</p>
+              <p class="font-size--16"><a class="font-size--16 font-weight--bold">Supporting information</a><br />TXT, 12.4KB</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="font-size--16">Refer to the <a href="#" class="font-size--16">dataset page</a> for more information on this data or to download the complete dataset.</p>
+
+      </div>
+    </div>
+  </div>
+
+</main>
