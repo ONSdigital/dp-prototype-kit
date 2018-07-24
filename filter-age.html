@@ -1,0 +1,642 @@
+---
+layout: prototype
+search: false
+primary-nav: false
+secondary-nav: false
+language-switch: false
+footer: false
+---
+
+<style media="screen">
+#multiple-choice-content-list {
+  border-left: solid #bfc1c3 4px;
+  margin-top: 8px;
+  position: relative;
+  left: -4px;
+}
+</style>
+
+<main id="main" role="main" tabindex="-1" class="prototype">
+
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+
+        <h1 class="margin-bottom--3 margin-top--3">
+          Age
+        </h1>
+
+        <p class="font-size--17">Ages 0 to 90 available in this dataset.</p>
+
+        <form id="age-form" method="post" action="">
+          <div class="form adjust-font-size--16 clear-left">
+            <div class="col col--md-29 col--lg-29 margin-top--2">
+              <div class="margin-bottom--6">
+                <div class="multiple-choice">
+                  <input id="age-selection-range" type="radio" class="multiple-choice__input" name="age-selection" value="range" checked="">
+                  <label for="age-selection-single" class="multiple-choice__label">Add a range of ages (for example 18 to 24)</label>
+                  <input id="youngest-age" name="youngest-age" type="hidden" value="0">
+                  <input id="oldest-age" name="oldest-age" type="hidden" value="90">
+                  <div id="multiple-choice-content-range" class="multiple-choice__content padding-top--4">
+<div class="margin-left--1">
+<div class="clearfix">
+<div class="col col--md-8 col--lg-8">
+<label class="block margin-bottom--1">Youngest</label>
+<input name="youngest" class="filters__age--text" value="">
+</div>
+<div class="col col--md-2 col--lg-2 margin-right--1 padding-top--4">
+<p class="font-size--16 block">to</p>
+</div>
+<div class="col col--md-8 col--lg-8">
+<label class="block margin-bottom--1">Oldest</label>
+<input name="oldest" class="filters__age--text" value="">
+</div>
+</div>
+</div>
+ </div>
+</div>
+<div class="multiple-choice">
+<input id="age-selection-list" type="radio" name="age-selection" class="multiple-choice__input" value="list">
+<label for="age-selection-list" class="multiple-choice__label">Add ages from list</label>
+<div id="multiple-choice-content-list" class="multiple-choice__content padding-top--2 col-wrap">
+<div class="col col--md-20 col--lg-15 margin-left-md--1">
+<div class="margin-left--1">
+<fieldset>
+<div class="checkbox-group" id="checkboxes-0">
+<div id="checkbox-header" class="checkbox margin-bottom--2">
+<input class="btn btn--link underline-link add-all font-size--16 margin-bottom--2" type="submit" value="Add all" id="add-all" name="add-all">
+&nbsp;&nbsp;<input class="btn btn--link underline-link remove-all js-hidden font-size--16 margin-bottom--2" type="submit" value="Remove all" id="remove-all" name="remove-all">
+</div>
+<!-- <div id="save-and-return-container" class="col--md-20 col--lg-20 width-sm--20 margin-bottom--2">
+<input name="save-and-return" id="age-save-and-return" class="btn btn--primary btn--thick btn--big btn--focus font-weight-700 font-size--17  padding-right--2 padding-left--2" type="submit" value="Save and return">
+</div> -->
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-0" name="0" value="0">
+<label class="checkbox__label" for="id-0">
+0
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-1" name="1" value="1">
+<label class="checkbox__label" for="id-1">
+1
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-2" name="2" value="2">
+<label class="checkbox__label" for="id-2">
+2
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-3" name="3" value="3">
+<label class="checkbox__label" for="id-3">
+3
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-4" name="4" value="4">
+<label class="checkbox__label" for="id-4">
+4
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-5" name="5" value="5">
+<label class="checkbox__label" for="id-5">
+5
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-6" name="6" value="6">
+<label class="checkbox__label" for="id-6">
+6
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-7" name="7" value="7">
+<label class="checkbox__label" for="id-7">
+7
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-8" name="8" value="8">
+<label class="checkbox__label" for="id-8">
+8
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-9" name="9" value="9">
+<label class="checkbox__label" for="id-9">
+9
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-10" name="10" value="10">
+<label class="checkbox__label" for="id-10">
+10
+</label>
+</div>
+ <div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-11" name="11" value="11">
+<label class="checkbox__label" for="id-11">
+11
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-12" name="12" value="12">
+<label class="checkbox__label" for="id-12">
+12
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-13" name="13" value="13">
+<label class="checkbox__label" for="id-13">
+13
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-14" name="14" value="14">
+<label class="checkbox__label" for="id-14">
+14
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-15" name="15" value="15">
+<label class="checkbox__label" for="id-15">
+15
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-16" name="16" value="16">
+<label class="checkbox__label" for="id-16">
+16
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-17" name="17" value="17">
+<label class="checkbox__label" for="id-17">
+17
+</label>
+ </div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-18" name="18" value="18">
+<label class="checkbox__label" for="id-18">
+18
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-19" name="19" value="19">
+<label class="checkbox__label" for="id-19">
+19
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-20" name="20" value="20">
+<label class="checkbox__label" for="id-20">
+20
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-21" name="21" value="21">
+<label class="checkbox__label" for="id-21">
+21
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-22" name="22" value="22">
+<label class="checkbox__label" for="id-22">
+22
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-23" name="23" value="23">
+<label class="checkbox__label" for="id-23">
+23
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-24" name="24" value="24">
+<label class="checkbox__label" for="id-24">
+24
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-25" name="25" value="25">
+<label class="checkbox__label" for="id-25">
+25
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-26" name="26" value="26">
+<label class="checkbox__label" for="id-26">
+26
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-27" name="27" value="27">
+<label class="checkbox__label" for="id-27">
+27
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-28" name="28" value="28">
+<label class="checkbox__label" for="id-28">
+28
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-29" name="29" value="29">
+<label class="checkbox__label" for="id-29">
+29
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-30" name="30" value="30">
+<label class="checkbox__label" for="id-30">
+30
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-31" name="31" value="31">
+<label class="checkbox__label" for="id-31">
+31
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-32" name="32" value="32">
+<label class="checkbox__label" for="id-32">
+32
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-33" name="33" value="33">
+<label class="checkbox__label" for="id-33">
+33
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-34" name="34" value="34">
+<label class="checkbox__label" for="id-34">
+34
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-35" name="35" value="35">
+<label class="checkbox__label" for="id-35">
+35
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-36" name="36" value="36">
+<label class="checkbox__label" for="id-36">
+36
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-37" name="37" value="37">
+<label class="checkbox__label" for="id-37">
+37
+</label>
+</div>
+
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-38" name="38" value="38">
+<label class="checkbox__label" for="id-38">
+38
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-39" name="39" value="39">
+<label class="checkbox__label" for="id-39">
+39
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-40" name="40" value="40">
+<label class="checkbox__label" for="id-40">
+40
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-41" name="41" value="41">
+<label class="checkbox__label" for="id-41">
+41
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-42" name="42" value="42">
+<label class="checkbox__label" for="id-42">
+42
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-43" name="43" value="43">
+<label class="checkbox__label" for="id-43">
+43
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-44" name="44" value="44">
+<label class="checkbox__label" for="id-44">
+44
+ </label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-45" name="45" value="45">
+<label class="checkbox__label" for="id-45">
+45
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-46" name="46" value="46">
+<label class="checkbox__label" for="id-46">
+46
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-47" name="47" value="47">
+<label class="checkbox__label" for="id-47">
+47
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-48" name="48" value="48">
+<label class="checkbox__label" for="id-48">
+48
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-49" name="49" value="49">
+<label class="checkbox__label" for="id-49">
+49
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-50" name="50" value="50">
+<label class="checkbox__label" for="id-50">
+50
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-51" name="51" value="51">
+ <label class="checkbox__label" for="id-51">
+51
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-52" name="52" value="52">
+<label class="checkbox__label" for="id-52">
+52
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-53" name="53" value="53">
+<label class="checkbox__label" for="id-53">
+53
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-54" name="54" value="54">
+<label class="checkbox__label" for="id-54">
+54
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-55" name="55" value="55">
+<label class="checkbox__label" for="id-55">
+55
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-56" name="56" value="56">
+<label class="checkbox__label" for="id-56">
+56
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-57" name="57" value="57">
+<label class="checkbox__label" for="id-57">
+57
+</label>
+</div>
+<div class="checkbox">
+ <input type="checkbox" class="checkbox__input " id="id-58" name="58" value="58">
+<label class="checkbox__label" for="id-58">
+58
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-59" name="59" value="59">
+<label class="checkbox__label" for="id-59">
+59
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-60" name="60" value="60">
+<label class="checkbox__label" for="id-60">
+60
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-61" name="61" value="61">
+<label class="checkbox__label" for="id-61">
+61
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-62" name="62" value="62">
+<label class="checkbox__label" for="id-62">
+62
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-63" name="63" value="63">
+<label class="checkbox__label" for="id-63">
+63
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-64" name="64" value="64">
+<label class="checkbox__label" for="id-64">
+64
+</label>
+ </div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-65" name="65" value="65">
+<label class="checkbox__label" for="id-65">
+65
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-66" name="66" value="66">
+<label class="checkbox__label" for="id-66">
+66
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-67" name="67" value="67">
+<label class="checkbox__label" for="id-67">
+67
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-68" name="68" value="68">
+<label class="checkbox__label" for="id-68">
+68
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-69" name="69" value="69">
+<label class="checkbox__label" for="id-69">
+69
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-70" name="70" value="70">
+<label class="checkbox__label" for="id-70">
+70
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-71" name="71" value="71">
+<label class="checkbox__label" for="id-71">
+ 71
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-72" name="72" value="72">
+<label class="checkbox__label" for="id-72">
+72
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-73" name="73" value="73">
+<label class="checkbox__label" for="id-73">
+73
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-74" name="74" value="74">
+<label class="checkbox__label" for="id-74">
+74
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-75" name="75" value="75">
+<label class="checkbox__label" for="id-75">
+75
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-76" name="76" value="76">
+<label class="checkbox__label" for="id-76">
+76
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-77" name="77" value="77">
+<label class="checkbox__label" for="id-77">
+77
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-78" name="78" value="78">
+<label class="checkbox__label" for="id-78">
+78
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-79" name="79" value="79">
+<label class="checkbox__label" for="id-79">
+79
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-80" name="80" value="80">
+<label class="checkbox__label" for="id-80">
+80
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-81" name="81" value="81">
+<label class="checkbox__label" for="id-81">
+81
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-82" name="82" value="82">
+<label class="checkbox__label" for="id-82">
+82
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-83" name="83" value="83">
+<label class="checkbox__label" for="id-83">
+83
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-84" name="84" value="84">
+<label class="checkbox__label" for="id-84">
+84
+</label>
+</div>
+ <div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-85" name="85" value="85">
+<label class="checkbox__label" for="id-85">
+85
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-86" name="86" value="86">
+<label class="checkbox__label" for="id-86">
+86
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-87" name="87" value="87">
+<label class="checkbox__label" for="id-87">
+87
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-88" name="88" value="88">
+<label class="checkbox__label" for="id-88">
+88
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-89" name="89" value="89">
+<label class="checkbox__label" for="id-89">
+89
+</label>
+</div>
+<div class="checkbox">
+<input type="checkbox" class="checkbox__input " id="id-90" name="90" value="90">
+<label class="checkbox__label" for="id-90">
+90
+</label>
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+<div id="add-all-save-and-return" class="col col--md-25 col--lg-15 margin-left-md--1 margin-bottom--6 margin-left-lg--4 js-hidden">
+<div class="margin-bottom--6 hide--md-only hide--sm">
+<input type="submit" name="save-and-return" class="btn btn--primary btn--thick btn--wide btn--big btn--focus margin-right--2 font-weight-700 font-size--17 text-wrap full-width" value="Save and return">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="save-and-return-container" class="col--md-20 col--lg-20 width-sm--20 margin-bottom--8">
+<input name="save-and-return" id="age-save-and-return" class="btn btn--primary btn--thick btn--big btn--focus font-weight-700 font-size--17  padding-right--2 padding-left--2" type="submit" value="Save and return">
+</div>
+</div>
+</form>
+      </div>
+    </div>
+  </div>
+
+</main>

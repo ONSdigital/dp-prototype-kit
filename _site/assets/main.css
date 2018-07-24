@@ -63,6 +63,8 @@
   @media (min-width: 768px) {
     .prototype a {
       font-size: 19px; } }
+.prototype .font-size--16 {
+  font-size: 16px; }
 .prototype hr {
   border: 0;
   border-bottom: 1px solid #D0D2D3; }
@@ -141,6 +143,8 @@
 .prototype .btn:focus {
   outline: 3px solid #FF9933;
   color: #FFFFFF; }
+.prototype .underline-link.btn:focus {
+  color: #206095; }
 .prototype .visually-hidden {
   /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
   position: absolute !important;

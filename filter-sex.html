@@ -1,0 +1,58 @@
+---
+layout: prototype
+search: false
+primary-nav: false
+secondary-nav: false
+language-switch: false
+footer: false
+---
+
+<main id="main" role="main" tabindex="-1" class="prototype">
+
+  <div class="wrapper">
+    <div class="col-wrap">
+      <div class="col">
+
+        <h1 class="margin-bottom--3 margin-top--3">
+          Sex
+        </h1>
+
+        <fieldset>
+
+          <div class="checkbox-group">
+            <div class="checkbox">
+              <input class="btn btn--link underline-link js-filter add-all font-size--16 margin-bottom--2" type="submit" value="Add all" name="add-all">
+              <input class="btn btn--link underline-link js-filter remove-list js-hidden font-size--16 margin-bottom--2" type="submit" value="Remove all" id="remove-all" name="remove-all">
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" class="checkbox__input js-filter" id="id-All" name="0" value="All" checked>
+              <label class="checkbox__label font-size--16" for="id-All">
+                All
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" class="checkbox__input js-filter" id="id-Female" name="2" value="Female">
+              <label class="checkbox__label font-size--16" for="id-Female">
+                Female
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" class="checkbox__input js-filter" id="id-Male" name="1" value="Male">
+              <label class="checkbox__label font-size--16" for="id-Male">
+                Male
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <a href="#" class="btn btn--primary btn--thick margin-bottom--2 margin-top--4 btn--focus font-weight-700 font-size--17 padding-right--2 padding-left--2">Save and return</a>
+
+      </div>
+    </div>
+  </div>
+
+</main>

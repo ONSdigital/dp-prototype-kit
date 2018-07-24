@@ -79,3 +79,7 @@ summary:focus {
   outline: 3px solid $carrot;
   color: $white;
 }
+
+.underline-link.btn:focus {
+  color: $matisse;
+}
