@@ -23,6 +23,9 @@ $haze:			  #F0F1F1;
 $white:			  #FFFFFF;
 $mine-shaft:	#222222;
 $cod-gray:	  #111111;
+$link-hover-colour: #2B8CC4;
+
+
 
 
 // Font colours
@@ -58,6 +61,10 @@ $cod-gray:	  #111111;
   color: $white;
 }
 
+.font-color--haze {
+  color: $haze;
+}
+
 .font-color--iron {
   color: $iron;
 }
@@ -68,5 +75,5 @@ $cod-gray:	  #111111;
 
 // white circle border
 .background--white {
-  border: 1px solid #DDDDDD;
+  // border: 1px solid #DDDDDD;
 }

@@ -1,2 +1,6 @@
 _site/
 *.scssc
+<<<<<<< HEAD
+=======
+.DS_Store
+>>>>>>> feature/rob
